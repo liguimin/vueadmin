@@ -1,0 +1,94 @@
+$border-color-normal:rgba(0,0,0,0.1);
+
+$input-border-color-normal:rgba(0,0,0,0.2);
+
+$font-color-light:rgba(0,0,0,0.7);
+
+$primary-color:#2d8cf0;
+
+$danger-color:#ed4014;
+
+$active-color:#57a3f3;
+
+$primary-background:#f5f7f9;
+
+$normal-bg-color:#f8f8f9;
+
+$normal-font-size:12px;
+
+@mixin primary-font-color {
+    color: $primary-color;
+}
+
+@mixin normal-bg {
+    background: $normal-bg-color;
+}
+
+@mixin border(){
+    border: solid 1px $border-color-normal;
+}
+
+@mixin border-left() {
+    border-left: solid 1px $border-color-normal;
+}
+
+@mixin border-right() {
+    border-right: solid 1px $border-color-normal;
+}
+
+@mixin border-bottom() {
+    border-bottom: solid 1px $border-color-normal;
+}
+
+@mixin border-top() {
+    border-top: solid 1px $border-color-normal;
+}
+
+@mixin border-radius($radius){
+    -ms-border-radius:$radius;
+    -moz-border-radius:$radius;
+    -webkit-border-radius:$radius;
+    border-radius: $radius;
+}
+
+@mixin display-flex(){
+    display: -webkit-box;
+    display: -moz-box;  
+    display: -webkit-flex;  
+    display: -moz-flex; 
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@mixin flex-direction-column(){
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+@mixin align-items-center(){
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+@mixin justify-content-center(){
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+@mixin common-box-sizing{
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+}
+
+@mixin box-shadow($shadow){
+    -moz-box-shadow:$shadow;
+    -webkit-box-shadow:$shadow;
+    box-shadow:$shadow;
+}
